@@ -1,0 +1,115 @@
+@charset "utf-8";
+
+body{
+  color:rgb(91, 91, 91);
+  background-color: ivory;
+  font-family: Verdana, Geneva, sans-serif;
+  	margin: 0 auto;
+  	width: 100%;
+  	max-width: 1020px;
+  	min-width: 640px;
+}
+body section#About_us{
+width: 76%;
+margin: 0 0 0 2%;
+}
+body aside blockquote {
+  font-size: 0.95em;
+  font-family: Comic Sans MS, cursive;
+  background-color: red;
+  color: yellow;
+  padding: 10px;
+  quotes: "\201C" "\201D";
+}
+body > section#Services > aside {
+	float: right;
+	width: 50%;
+}
+ aside blockquote::before {
+  content: open-quote;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.6em;
+  font-weight: bold;
+ }
+ aside blockquote::after {
+  content: close-quote;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.6em;
+  font-weight: bold;
+}
+html {
+  background-color: rgb(250, 235, 215);
+}
+header {
+  background-color:rgb(250, 235, 215);
+}
+
+h1 {
+    font-weight: bold;
+    font-family:  Nobile, Verdana, Geneva, sans-serif;
+    letter-spacing: 0.2em;
+    margin: 0px;
+}
+h2{
+  text-decoration: underline;
+}
+h3{
+  text-decoration: underline;
+}
+p{
+  border: inset;
+  font-weight: bold;
+}
+body>footer {
+  width: 100%;
+  clear: left;
+}
+body>footer address{
+  background-color:red;
+  color: yellow;
+  font-style: normal;
+  font-variant: small-caps;
+  font-size: 1em;
+  line-height: 3em;
+  font-family: Nobile, Verdana, Geneva, sans-serif;
+  text-align: center;
+}
+/*removes default padding and sets width to span 100% of the outer container(or body in this case)*/
+ul {
+  padding: 0;
+  width: 100%;
+}
+
+/* Displays the links on the same line */
+li {
+  display: inline;
+}
+
+/* displays the links in a block with the text aligned in the center of the block.*/
+nav a {
+  border: outset;
+  outline: none;
+  text-decoration: underline;
+  display: inline-block;
+  width: 19.5%;
+  text-align: center;
+  line-height: 3;
+  color: yellow;
+}
+/* Deals with the last item in a list*/
+li:last-child a {
+  margin-right: 0;
+}
+
+a:link, a:visited, a:focus {
+  background: red;
+}
+
+a:hover {
+  background: purple;
+}
+
+a:active {
+  background: blue;
+  color: white;
+}

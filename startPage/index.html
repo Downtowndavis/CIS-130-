@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Form with GET Request</title>
+  <link rel="stylesheet" href="styles.css" />
+<!--Name: John Davis Assignment: Registration Form. Date: 2/9/2021 File: index.html-->
+</head>
+
+<body>
+  <h2>Advising Appointment</h2>
+  <div class="container">
+    <form action="thankyou.html" method="get">
+      <h1>Form with GET Request</h1>
+      <fieldset class="Contact">
+        <legend>
+          Contact Information
+        </legend>
+        <label for="fname">
+          Name:
+          <input autofocus type="text" name="fname" id="fname" required placeholder="First Name" />
+        </label>
+        <label for="lname">
+          Last Name:
+          <input type="text" name="lname" id="lname" required placeholder="Last Name" />
+        </label>
+        <label for="email">
+          Email:
+          <input type="email" name="email" id="email" required placeholder="yourEmail@example.com" />
+        </label>
+      </fieldset>
+      <fieldset class="Reservation">
+        <legend>
+          Reservation Request
+        </legend>
+        <select id="teacher_names" name="teacher_names">
+          <option value="Kristen Markley">Kristen Markley</option>
+          <option value="Tiffany Ford">Tiffany Ford</option>
+          <option value="Renee Riley">Renee Riley</option>
+        </select>
+        <!--Dropdown box for months-->
+        <select id="month" name="month">
+          <option value="January">January</option>
+          <option value="February">February</option>
+          <option value="March">March</option>
+          <option value="April">April</option>
+          <option value="May">May</option>
+          <option value="June">June"</option>
+          <option value="July">July</option>
+          <option value="August">August</option>
+          <option value="September">September</option>
+          <option value="October">October</option>
+          <option value="November">November</option>
+          <option value="December">December</option>
+        </select>
+        <!--Scrolling or clickable date selection box-->
+        <input type="number" id="day" name="day" min="1" max="31">
+        <!--Input buttons for AM/PM-->
+        <input type="radio" id="male" name="time" value="male">
+        <label for="male">AM</label>
+        <input type="radio" id="female" name="time" value="female">
+        <label for="female">PM</label>
+      </fieldset>
+      <!--Checkbox selector-->
+      <fieldset class="Classes">
+        <legend>
+          Classes You Want Take Next Semester:
+        </legend>
+        <input type="checkbox" id="class1" name="class1" value="Class">
+        <label for="class1"> Java</label>
+        <input type="checkbox" id="class2" name="class2" value="Class">
+        <label for="class2"> C#</label>
+        <input type="checkbox" id="class3" name="class3" value="Class">
+        <label for="class3"> Web Dev</label>
+        <input type="checkbox" id="class4" name="class4" value="Class">
+        <label for="class4"> Database</label>
+        <input type="checkbox" id="class5" name="class5" value="Class">
+        <label for="class5"> System Analysis & Design</label>
+      </fieldset>
+      <fieldset>
+       <!--Text area-->
+        <legend>
+        Additional Info
+        </legend>
+          <textarea name="message" rows="10" cols="75">Any additional info</textarea>
+      </fieldset>
+      <input class="submit" type="submit" value="Submit" />
+    </form>
+  </div>
+
+</body>
+
+</html>
