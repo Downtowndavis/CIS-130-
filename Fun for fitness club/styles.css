@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 /*Body CSS*/
 body {
   background-image: url(gym.jpg);
@@ -6,18 +7,35 @@ body {
   background-attachment: fixed;
   background-color: red;
 }
-body{
-  color:rgb(91, 91, 91);
+
+body {
+  color: rgb(91, 91, 91);
   background-color: ivory;
   font-family: Verdana, Geneva, sans-serif;
-  	margin: 0 auto;
-  	width: 100%;
-  	max-width: 1020px;
-  	min-width: 640px;
-  }
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1020px;
+  min-width: 640px;
+}
+
 section h1 {
-    text-decoration: underline;
-  }
+  text-decoration: underline;
+}
+
+section h3 {
+  text-decoration: underline;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+margin-right: auto;
+width: 75%;
+}
+
+
+
+
 /* makes a grey box around the div containers*/
 .container {
   margin: auto;
@@ -27,6 +45,7 @@ section h1 {
   border-radius: 10px;
   margin-bottom: 10px;
 }
+
 .container1 {
   margin: auto;
   width: 95%;
@@ -35,52 +54,77 @@ section h1 {
   border-radius: 10px;
   margin-bottom: 10px;
 }
+
 /*Heading/Title CSS*/
 h1 {
   text-align: center;
 }
+
 h2 {
+  text-align: center;
+}
+p{
+  border: inset;
+  font-weight: bold;
+}
+body>footer {
+  width: 100%;
+  clear: left;
+}
+body>footer address{
+  background-color:green;
+  color: white;
+  font-style: normal;
+  font-variant: small-caps;
+  font-size: 1em;
+  line-height: 3em;
+  font-family: Nobile, Verdana, Geneva, sans-serif;
   text-align: center;
 }
 
 
 /*Submit Button*/
 .submit {
-  width: initial; position: initial;
+  width: initial;
+  position: initial;
 }
 
 /*TABLE CSS*/
-
 /*Size of table*/
 table {
   margin: 100px 0px 0px 200px;
   width: 80%;
 }
+
 /*Opacity for table*/
 table, th, td {
-  border: 2px red solid;
+  border: 2px green solid;
   opacity: .90
 }
+
 /*Changes size of the tables body and the header. Also aligns the text in the center*/
 th, td {
   padding: 10px;
   text-align: center;
 }
+
 /*Changes the even numbered rows background to light gray*/
 tr:nth-child(even) {
   background-color: #e8e8e8
 }
+
 /*Changes the odd numbered rows background to white*/
 tr:nth-child(odd) {
   background-color: white
 }
+
 /* Changes background color of the rows to blue and the text color to white.*/
 th {
   background-color: #0000cc;
   color: white;
 }
-/* Nav CSS*/
 
+/* Nav CSS*/
 ul {
   list-style-type: none;
   margin: 0;
@@ -101,10 +145,10 @@ li a {
   text-decoration: none;
 }
 
-
 a:hover:not(.active) {
   background-color: #111;
 }
+
 .active {
   background-color: #4CAF50;
 }

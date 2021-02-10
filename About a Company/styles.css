@@ -13,7 +13,7 @@ body section#About_us{
 width: 76%;
 margin: 0 0 0 2%;
 }
-body aside blockquote {
+body section aside blockquote {
   font-size: 0.95em;
   font-family: Comic Sans MS, cursive;
   background-color: red;
