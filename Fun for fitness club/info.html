@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Information</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+           <li><a href="index.html">Homepage</a></li><!--
+           --><li><a href="classes.html">Classes</a><!--
+           --><li><a href="info.html">More Information</a></li>
+           <!-- the comments allow my link buttons to touch eachother-->
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+      <form action="thankyou.html" method="get">
+        <h1>Course Signup</h1>
+        <fieldset class="Contact">
+          <legend>
+            Contact Information
+          </legend>
+          <label for="fname">
+            Name:
+            <input autofocus type="text" name="fname" id="fname" required placeholder="First Name" />
+          </label>
+          <label for="lname">
+            Last Name:
+            <input type="text" name="lname" id="lname" required placeholder="Last Name" />
+          </label>
+          <label for="email">
+            Email:
+            <input type="email" name="email" id="email" required placeholder="yourEmail@example.com" />
+          </label>
+          <label for="tel">
+              Phone Number:
+            <input type="tel" name="tel" id="tel" required placeholder="(555)-555-5555" />
+          </label>
+          <label for="prefrd_contact">
+            Best Way to Contact
+          <select name="prefrd_contact" id="prefrd_contact">
+            <option value="phone">Phone</option>
+            <option value="email">Email</option>
+          </select>
+</label>
+
+        </fieldset>
+        <fieldset class="Reservation">
+          <legend>
+            Reservation Request
+          </legend>
+          <select id="instructor_names" name="instructor_names">
+            <option value="Kelly Johnson">Kelly Johnson</option>
+            <option value="Annette Farouki">Annette Farouki</option>
+            <option value="Brooke Henderson">Brooke Henderson</option>
+            <option value="Angela Esquivel-Zahner">Angela Esquivel-Zahner</option>
+            <option value="Colleen Merrigan">Colleen Merrigan</option>
+            <option value="Lee Anne Latimer">Lee Anne Latimer</option>
+            <option value="N/A">None Stated</option>
+          </select>
+          <!--Dropdown box for months-->
+          <select id="month" name="month">
+            <option value="January">January</option>
+            <option value="February">February</option>
+            <option value="March">March</option>
+            <option value="April">April</option>
+            <option value="May">May</option>
+            <option value="June">June"</option>
+            <option value="July">July</option>
+            <option value="August">August</option>
+            <option value="September">September</option>
+            <option value="October">October</option>
+            <option value="November">November</option>
+            <option value="December">December</option>
+          </select>
+          <!--Scrolling or clickable date selection box-->
+          <input type="number" id="day" name="day" min="1" max="31">
+          <!--Input buttons for AM/PM-->
+          <input type="radio" id="AM" name="time" value="AM">
+          <label for="AM">AM</label>
+          <input type="radio" id="PM" name="time" value="PM">
+          <label for="PM">PM</label>
+        </fieldset>
+        <!--Checkbox selector-->
+        <fieldset class="Classes">
+          <legend>
+            Classes You Want Take Next Semester:
+          </legend>
+          <input type="checkbox" id="class1" name="class1" value="Class">
+          <label for="class1"> Cross Training</label>
+          <input type="checkbox" id="class2" name="class2" value="Class">
+          <label for="class2"> Sprint</label>
+          <input type="checkbox" id="class3" name="class3" value="Class">
+          <label for="class3"> Body Pump</label>
+          <input type="checkbox" id="class4" name="class4" value="Class">
+          <label for="class4"> Advanced Cross Training</label>
+          <input type="checkbox" id="class5" name="class5" value="Class">
+          <label for="class5"> MixxedFIT</label>
+          <input type="checkbox" id="class6" name="class6" value="Class">
+          <label for="class6"> Spin</label>
+          <input type="checkbox" id="class7" name="class7" value="Class">
+          <label for="class7"> BodyCombat</label>
+          <input type="checkbox" id="class8" name="class8" value="Class">
+          <label for="class8"> Step Interval</label>
+        </fieldset>
+        <fieldset>
+         <!--Text area-->
+          <legend>
+          Additional Info
+          </legend>
+            <textarea name="message" rows="10" cols="75">Any additional info</textarea>
+        </fieldset>
+        <input class="submit" type="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
+</html>
